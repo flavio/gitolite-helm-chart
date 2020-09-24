@@ -1,4 +1,4 @@
-{{- if and .Values.Persistence.SshKeys.Enabled (not .Values.Persistence.ExistingClaim) -}}
+{{- if and .Values.Persistence.SshKeys.Enabled (not .Values.Persistence.SshKeys.ExistingClaim) -}}
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
